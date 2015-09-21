@@ -421,7 +421,7 @@ var HTML5Backend = (function () {
         // Firefox won't drag without setting data
         dataTransfer.setData('application/json', {});
         // Chrome <webview> won't fire drop event without setting text
-        dataTransfer.setData('text', '');
+        dataTransfer.setData('text', 'non-empty-string');
       } catch (err) {}
       // IE doesn't support MIME types in setData
 
